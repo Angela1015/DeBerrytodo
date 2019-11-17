@@ -11,7 +11,7 @@ function addTodo(text) {
  // console.log(todoItems);
 
   
-    todoItems.push(todo);
+   
   
     const list = document.querySelector('.js-todo-list');
     list.insertAdjacentHTML('beforeend', `
