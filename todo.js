@@ -39,6 +39,8 @@ function deleteTodo(key){
     todoItems = todoItems.filter(item=>item.id!==Number(key));
     const item = document.querySelector(`[data-key='${key}']`);
     item.remove();
+    const list = document.querySelector('.js-todo-list');
+    if(todoItems.length===0)list.innerHTML='';
   }
 
 const form = document.querySelector('.js-form');
